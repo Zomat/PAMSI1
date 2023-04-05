@@ -1,0 +1,430 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: Project1
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target dequeDriver
+
+
+#############################################
+# Order-only phony target for dequeDriver
+
+build cmake_object_order_depends_target_dequeDriver: phony || CMakeFiles/dequeDriver.dir
+
+build CMakeFiles/dequeDriver.dir/dequeDriver.cpp.o: CXX_COMPILER__dequeDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/dequeDriver.cpp || cmake_object_order_depends_target_dequeDriver
+  DEP_FILE = CMakeFiles/dequeDriver.dir/dequeDriver.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/dequeDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/dequeDriver.dir
+
+build CMakeFiles/dequeDriver.dir/include/Palindrom.cpp.o: CXX_COMPILER__dequeDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/Palindrom.cpp || cmake_object_order_depends_target_dequeDriver
+  DEP_FILE = CMakeFiles/dequeDriver.dir/include/Palindrom.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/dequeDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/dequeDriver.dir/include
+
+build CMakeFiles/dequeDriver.dir/include/DynamicStringArray.cpp.o: CXX_COMPILER__dequeDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/DynamicStringArray.cpp || cmake_object_order_depends_target_dequeDriver
+  DEP_FILE = CMakeFiles/dequeDriver.dir/include/DynamicStringArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/dequeDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/dequeDriver.dir/include
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dequeDriver
+
+
+#############################################
+# Link the executable dequeDriver
+
+build dequeDriver: CXX_EXECUTABLE_LINKER__dequeDriver_Debug CMakeFiles/dequeDriver.dir/dequeDriver.cpp.o CMakeFiles/dequeDriver.dir/include/Palindrom.cpp.o CMakeFiles/dequeDriver.dir/include/DynamicStringArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/dequeDriver.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = dequeDriver
+  TARGET_PDB = dequeDriver.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target linkedListDriver
+
+
+#############################################
+# Order-only phony target for linkedListDriver
+
+build cmake_object_order_depends_target_linkedListDriver: phony || CMakeFiles/linkedListDriver.dir
+
+build CMakeFiles/linkedListDriver.dir/linkedListDriver.cpp.o: CXX_COMPILER__linkedListDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/linkedListDriver.cpp || cmake_object_order_depends_target_linkedListDriver
+  DEP_FILE = CMakeFiles/linkedListDriver.dir/linkedListDriver.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/linkedListDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/linkedListDriver.dir
+
+build CMakeFiles/linkedListDriver.dir/include/Palindrom.cpp.o: CXX_COMPILER__linkedListDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/Palindrom.cpp || cmake_object_order_depends_target_linkedListDriver
+  DEP_FILE = CMakeFiles/linkedListDriver.dir/include/Palindrom.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/linkedListDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/linkedListDriver.dir/include
+
+build CMakeFiles/linkedListDriver.dir/include/DynamicStringArray.cpp.o: CXX_COMPILER__linkedListDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/DynamicStringArray.cpp || cmake_object_order_depends_target_linkedListDriver
+  DEP_FILE = CMakeFiles/linkedListDriver.dir/include/DynamicStringArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/linkedListDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/linkedListDriver.dir/include
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target linkedListDriver
+
+
+#############################################
+# Link the executable linkedListDriver
+
+build linkedListDriver: CXX_EXECUTABLE_LINKER__linkedListDriver_Debug CMakeFiles/linkedListDriver.dir/linkedListDriver.cpp.o CMakeFiles/linkedListDriver.dir/include/Palindrom.cpp.o CMakeFiles/linkedListDriver.dir/include/DynamicStringArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/linkedListDriver.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = linkedListDriver
+  TARGET_PDB = linkedListDriver.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target queueDriver
+
+
+#############################################
+# Order-only phony target for queueDriver
+
+build cmake_object_order_depends_target_queueDriver: phony || CMakeFiles/queueDriver.dir
+
+build CMakeFiles/queueDriver.dir/queueDriver.cpp.o: CXX_COMPILER__queueDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/queueDriver.cpp || cmake_object_order_depends_target_queueDriver
+  DEP_FILE = CMakeFiles/queueDriver.dir/queueDriver.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/queueDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/queueDriver.dir
+
+build CMakeFiles/queueDriver.dir/include/Palindrom.cpp.o: CXX_COMPILER__queueDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/Palindrom.cpp || cmake_object_order_depends_target_queueDriver
+  DEP_FILE = CMakeFiles/queueDriver.dir/include/Palindrom.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/queueDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/queueDriver.dir/include
+
+build CMakeFiles/queueDriver.dir/include/DynamicStringArray.cpp.o: CXX_COMPILER__queueDriver_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/DynamicStringArray.cpp || cmake_object_order_depends_target_queueDriver
+  DEP_FILE = CMakeFiles/queueDriver.dir/include/DynamicStringArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/queueDriver.dir
+  OBJECT_FILE_DIR = CMakeFiles/queueDriver.dir/include
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target queueDriver
+
+
+#############################################
+# Link the executable queueDriver
+
+build queueDriver: CXX_EXECUTABLE_LINKER__queueDriver_Debug CMakeFiles/queueDriver.dir/queueDriver.cpp.o CMakeFiles/queueDriver.dir/include/Palindrom.cpp.o CMakeFiles/queueDriver.dir/include/DynamicStringArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/queueDriver.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queueDriver
+  TARGET_PDB = queueDriver.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zad1_2
+
+
+#############################################
+# Order-only phony target for zad1_2
+
+build cmake_object_order_depends_target_zad1_2: phony || CMakeFiles/zad1_2.dir
+
+build CMakeFiles/zad1_2.dir/zad1_2.cpp.o: CXX_COMPILER__zad1_2_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/zad1_2.cpp || cmake_object_order_depends_target_zad1_2
+  DEP_FILE = CMakeFiles/zad1_2.dir/zad1_2.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad1_2.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad1_2.dir
+
+build CMakeFiles/zad1_2.dir/include/Palindrom.cpp.o: CXX_COMPILER__zad1_2_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/Palindrom.cpp || cmake_object_order_depends_target_zad1_2
+  DEP_FILE = CMakeFiles/zad1_2.dir/include/Palindrom.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad1_2.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad1_2.dir/include
+
+build CMakeFiles/zad1_2.dir/include/DynamicStringArray.cpp.o: CXX_COMPILER__zad1_2_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/DynamicStringArray.cpp || cmake_object_order_depends_target_zad1_2
+  DEP_FILE = CMakeFiles/zad1_2.dir/include/DynamicStringArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad1_2.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad1_2.dir/include
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zad1_2
+
+
+#############################################
+# Link the executable zad1_2
+
+build zad1_2: CXX_EXECUTABLE_LINKER__zad1_2_Debug CMakeFiles/zad1_2.dir/zad1_2.cpp.o CMakeFiles/zad1_2.dir/include/Palindrom.cpp.o CMakeFiles/zad1_2.dir/include/DynamicStringArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/zad1_2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = zad1_2
+  TARGET_PDB = zad1_2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zad3
+
+
+#############################################
+# Order-only phony target for zad3
+
+build cmake_object_order_depends_target_zad3: phony || CMakeFiles/zad3.dir
+
+build CMakeFiles/zad3.dir/zad3.cpp.o: CXX_COMPILER__zad3_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/zad3.cpp || cmake_object_order_depends_target_zad3
+  DEP_FILE = CMakeFiles/zad3.dir/zad3.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad3.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad3.dir
+
+build CMakeFiles/zad3.dir/include/Palindrom.cpp.o: CXX_COMPILER__zad3_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/Palindrom.cpp || cmake_object_order_depends_target_zad3
+  DEP_FILE = CMakeFiles/zad3.dir/include/Palindrom.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad3.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad3.dir/include
+
+build CMakeFiles/zad3.dir/include/DynamicStringArray.cpp.o: CXX_COMPILER__zad3_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/DynamicStringArray.cpp || cmake_object_order_depends_target_zad3
+  DEP_FILE = CMakeFiles/zad3.dir/include/DynamicStringArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad3.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad3.dir/include
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zad3
+
+
+#############################################
+# Link the executable zad3
+
+build zad3: CXX_EXECUTABLE_LINKER__zad3_Debug CMakeFiles/zad3.dir/zad3.cpp.o CMakeFiles/zad3.dir/include/Palindrom.cpp.o CMakeFiles/zad3.dir/include/DynamicStringArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/zad3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = zad3
+  TARGET_PDB = zad3.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zad4
+
+
+#############################################
+# Order-only phony target for zad4
+
+build cmake_object_order_depends_target_zad4: phony || CMakeFiles/zad4.dir
+
+build CMakeFiles/zad4.dir/zad4.cpp.o: CXX_COMPILER__zad4_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/zad4.cpp || cmake_object_order_depends_target_zad4
+  DEP_FILE = CMakeFiles/zad4.dir/zad4.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad4.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad4.dir
+
+build CMakeFiles/zad4.dir/include/Palindrom.cpp.o: CXX_COMPILER__zad4_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/Palindrom.cpp || cmake_object_order_depends_target_zad4
+  DEP_FILE = CMakeFiles/zad4.dir/include/Palindrom.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad4.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad4.dir/include
+
+build CMakeFiles/zad4.dir/include/DynamicStringArray.cpp.o: CXX_COMPILER__zad4_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/DynamicStringArray.cpp || cmake_object_order_depends_target_zad4
+  DEP_FILE = CMakeFiles/zad4.dir/include/DynamicStringArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad4.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad4.dir/include
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zad4
+
+
+#############################################
+# Link the executable zad4
+
+build zad4: CXX_EXECUTABLE_LINKER__zad4_Debug CMakeFiles/zad4.dir/zad4.cpp.o CMakeFiles/zad4.dir/include/Palindrom.cpp.o CMakeFiles/zad4.dir/include/DynamicStringArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/zad4.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = zad4
+  TARGET_PDB = zad4.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target zad5
+
+
+#############################################
+# Order-only phony target for zad5
+
+build cmake_object_order_depends_target_zad5: phony || CMakeFiles/zad5.dir
+
+build CMakeFiles/zad5.dir/zad5.cpp.o: CXX_COMPILER__zad5_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/zad5.cpp || cmake_object_order_depends_target_zad5
+  DEP_FILE = CMakeFiles/zad5.dir/zad5.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad5.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad5.dir
+
+build CMakeFiles/zad5.dir/include/Palindrom.cpp.o: CXX_COMPILER__zad5_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/Palindrom.cpp || cmake_object_order_depends_target_zad5
+  DEP_FILE = CMakeFiles/zad5.dir/include/Palindrom.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad5.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad5.dir/include
+
+build CMakeFiles/zad5.dir/include/DynamicStringArray.cpp.o: CXX_COMPILER__zad5_Debug /Users/mateuszzolisz/CLionProjects/Algs/Project1/include/DynamicStringArray.cpp || cmake_object_order_depends_target_zad5
+  DEP_FILE = CMakeFiles/zad5.dir/include/DynamicStringArray.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/include
+  OBJECT_DIR = CMakeFiles/zad5.dir
+  OBJECT_FILE_DIR = CMakeFiles/zad5.dir/include
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target zad5
+
+
+#############################################
+# Link the executable zad5
+
+build zad5: CXX_EXECUTABLE_LINKER__zad5_Debug CMakeFiles/zad5.dir/zad5.cpp.o CMakeFiles/zad5.dir/include/Palindrom.cpp.o CMakeFiles/zad5.dir/include/DynamicStringArray.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  OBJECT_DIR = CMakeFiles/zad5.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = zad5
+  TARGET_PDB = zad5.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/mateuszzolisz/CLionProjects/Algs/Project1 -B/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug
+
+build all: phony dequeDriver linkedListDriver queueDriver zad1_2 zad3 zad4 zad5
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/mateuszzolisz/CLionProjects/Algs/Project1/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/mateuszzolisz/CLionProjects/Algs/Project1/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

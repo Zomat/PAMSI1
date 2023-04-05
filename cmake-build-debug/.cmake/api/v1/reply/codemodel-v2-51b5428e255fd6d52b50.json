@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "dequeDriver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dequeDriver-Debug-5a55eafb371c4f1e76bd.json",
+					"name" : "dequeDriver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linkedListDriver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linkedListDriver-Debug-2d9c128075627a9d43e6.json",
+					"name" : "linkedListDriver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "queueDriver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-queueDriver-Debug-a624f46c80e8519a66b7.json",
+					"name" : "queueDriver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zad1_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zad1_2-Debug-082f5595b8c76d6bc9ea.json",
+					"name" : "zad1_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zad3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zad3-Debug-cb57b65bac2bce81dd41.json",
+					"name" : "zad3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zad4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zad4-Debug-e82fdc1d5a67880f0e4c.json",
+					"name" : "zad4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zad5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zad5-Debug-b3b2a9d8ecf20525d9e4.json",
+					"name" : "zad5",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug",
+		"source" : "/Users/mateuszzolisz/CLionProjects/Algs/Project1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

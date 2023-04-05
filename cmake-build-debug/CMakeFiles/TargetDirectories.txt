@@ -1,0 +1,9 @@
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/dequeDriver.dir
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/linkedListDriver.dir
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/queueDriver.dir
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/zad1_2.dir
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/zad3.dir
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/zad4.dir
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/zad5.dir
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mateuszzolisz/CLionProjects/Algs/Project1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
